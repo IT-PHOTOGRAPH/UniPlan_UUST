@@ -5,7 +5,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/background">
 
     <TextView
         android:layout_width="wrap_content"
@@ -13,7 +14,7 @@
         android:text="Week Schedule"
         android:textSize="30sp"
         android:textStyle="bold"
-        android:textColor="#000000"
+        android:textColor="@color/textPrimary"
         android:padding="16dp"/>
 
     <HorizontalScrollView
@@ -26,13 +27,11 @@
             android:orientation="horizontal"
             android:padding="8dp">
 
-            <!-- MON -->
-
             <LinearLayout
                 android:layout_width="120dp"
-                android:layout_height="400dp"
+                android:layout_height="200dp"
                 android:orientation="vertical"
-                android:background="#E8F0FE"
+                android:background="@color/cardBackground"
                 android:padding="8dp"
                 android:layout_marginEnd="8dp">
 
@@ -42,17 +41,15 @@
                     android:text="MON"
                     android:textSize="20sp"
                     android:textStyle="bold"
-                    android:textColor="#4285F4"/>
+                    android:textColor="@color/textPrimary"/>
 
             </LinearLayout>
 
-            <!-- TUE -->
-
             <LinearLayout
                 android:layout_width="120dp"
-                android:layout_height="400dp"
+                android:layout_height="200dp"
                 android:orientation="vertical"
-                android:background="#F3E5F5"
+                android:background="@color/cardBackground"
                 android:padding="8dp"
                 android:layout_marginEnd="8dp">
 
@@ -61,71 +58,14 @@
                     android:layout_height="wrap_content"
                     android:text="TUE"
                     android:textSize="20sp"
-                    android:textStyle="bold"/>
-
-            </LinearLayout>
-
-            <!-- WED -->
-
-            <LinearLayout
-                android:layout_width="120dp"
-                android:layout_height="400dp"
-                android:orientation="vertical"
-                android:background="#E8F5E9"
-                android:padding="8dp"
-                android:layout_marginEnd="8dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="WED"
-                    android:textSize="20sp"
-                    android:textStyle="bold"/>
-
-            </LinearLayout>
-
-            <!-- THU -->
-
-            <LinearLayout
-                android:layout_width="120dp"
-                android:layout_height="400dp"
-                android:orientation="vertical"
-                android:background="#FFF3E0"
-                android:padding="8dp"
-                android:layout_marginEnd="8dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="THU"
-                    android:textSize="20sp"
-                    android:textStyle="bold"/>
-
-            </LinearLayout>
-
-            <!-- FRI -->
-
-            <LinearLayout
-                android:layout_width="120dp"
-                android:layout_height="400dp"
-                android:orientation="vertical"
-                android:background="#FCE4EC"
-                android:padding="8dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="FRI"
-                    android:textSize="20sp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold"
+                    android:textColor="@color/textPrimary"/>
 
             </LinearLayout>
 
         </LinearLayout>
 
     </HorizontalScrollView>
-
-    <!-- EVENTS -->
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/weekRecyclerView"
@@ -138,7 +78,7 @@
         android:id="@+id/bottomNavigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/white"
+        android:background="@color/cardBackground"
         app:itemIconTint="@color/googleBlue"
         app:itemTextColor="@color/googleBlue"
         app:menu="@menu/bottom_menu"/>

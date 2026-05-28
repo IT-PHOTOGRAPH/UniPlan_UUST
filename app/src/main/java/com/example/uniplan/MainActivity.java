@@ -21,8 +21,6 @@ public class MainActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     FloatingActionButton btnAdd;
 
-    Button btnDay, btnWeek;
-
     DatabaseHelper databaseHelper;
 
     BottomNavigationView bottomNavigationView;
@@ -62,9 +60,6 @@ public class MainActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.recyclerView);
         btnAdd = findViewById(R.id.btnAdd);
 
-        btnDay = findViewById(R.id.btnDay);
-        btnWeek = findViewById(R.id.btnWeek);
-
         databaseHelper = new DatabaseHelper(this);
 
         loadEvents();
@@ -76,19 +71,7 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-        btnDay.setOnClickListener(v -> {
 
-            startActivity(new Intent(MainActivity.this,
-                    WeekScheduleActivity.class));
-
-        });
-
-        btnWeek.setOnClickListener(v -> {
-
-            startActivity(new Intent(MainActivity.this,
-                    WeekScheduleActivity.class));
-
-        });
     }
 
     private void loadEvents() {
