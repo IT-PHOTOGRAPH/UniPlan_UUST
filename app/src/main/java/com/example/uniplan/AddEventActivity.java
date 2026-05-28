@@ -45,8 +45,8 @@ public class AddEventActivity extends AppCompatActivity {
                     new DatePickerDialog(this,
                             (view, selectedYear, selectedMonth, selectedDay) -> {
 
-                                String date = selectedDay + "/" +
-                                        (selectedMonth + 1) + "/" +
+                                String date = selectedDay + "." +
+                                        (selectedMonth + 1) + "." +
                                         selectedYear;
 
                                 etDate.setText(date);

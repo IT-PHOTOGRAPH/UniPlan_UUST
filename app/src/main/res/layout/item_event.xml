@@ -46,17 +46,18 @@
                 android:id="@+id/tvDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="12/05/2026"
-                android:textStyle="bold"
-                android:textColor="@color/googleBlue"/>
+                android:text="12.05.2026"
+                android:textColor="@color/googleBlue"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tvTime"
-                android:layout_width="wrap_content"
+                android:layout_width="70dp"
                 android:layout_height="wrap_content"
-                android:text="  •  14:00"
-                android:textStyle="bold"
-                android:textColor="@color/googleBlue"/>
+                android:text="14:00"
+                android:textAlignment="center"
+                android:textColor="@color/googleBlue"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
